@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>10-сынып оқушыларына арналған "HTML көмегімен веб-беттер құру" атты сандық электрондық ресурс құру</title>
+
+ 
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body>
+
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+      
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Негізгі бет</a></li>
+              <li class="scroll-to-section"><a href="#services">Қызметтер</a></li>
+              <li class="scroll-to-section"><a href="#about">Жоба туралы</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Баға</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Жаңалықтар</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Тіркелу</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Мәзір</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Facebook арқылы тіркелу</span>
+
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Google арқылы тіркелу</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Email адресін қолдану</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Тіркелу</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Жазылу</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Тұтынушы есімі</label>
+                <input type="text" />
+                <br />
+
+                <label>Құпия сөз</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Құрылғыда сақтау</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Кері</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Тіркелу</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Құпия сөзді ұмыттыңыз ба?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Толық аты-жөні</label>
+                <input type="text" />
+                <br />
+
+                <label>Email адрес</label>
+                <input type="email" />
+                <br />
+
+                <label>Құпиясөз</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Жаңартулар жайында хабарландыру</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Кері</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Тіркелу</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Соңғы үлгідегі мобильді HTML құрылымды қосымшалар</h2>
+                    <p>HTML (Hyper Text Markup Language) термині "гипермәтіндерді таңбалау тілі"дегенді білдіреді. Бұл ұғым кеңінен таралған, ол Интернет пен жергілікті желілерді, редакторларды, браузерлерді, әртүрлі бағдарламалық өнімдерді, компакт-дискілерді, оқу курстарын, дизайнды және т.б. қамтиды.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Apple <i class="fab fa-apple"></i></a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="#contact">Android <i class="fab fa-google-play"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Ең керемет <em>Қызмет &amp; Көрсету</em> сіз үшін!</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>WWW-дегі ақпарат құжаттар түрінде ұсынылады, олардың кез-келгенінде ішкі сілтемелер де, сол немесе басқа серверде сақталатын басқа құжаттарға сілтеме болуы мүмкін. <a rel="nofollow" href="https://www.youtube.com/" target="_blank">TooTube</a> Егер сізге ақпарат іздеу қажет болса  <a href="https://templatemo.com/contact" target="_parent">толық ақпарат</a> үшін сілтемеге өтіңіз.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>HTML қызметі</h4>
+            <p>HTML- күрделі бағдарламалау тілдеріне ерекше қарама-қарсы тіл болып табылады.</p>
+            <div class="text-button">
+              <a href="#">Толығырақ <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Жылдам қызмет көрсету</h4>
+            <p>HTML жай ғана бағдарламалау тілі болуды әлдеқашан тоқтатқан. Бұл тілді меңгерген адам күрделі нәрселерді қарапайым тәсілдермен ең бастысы тез жасауға мүмкіндік алады.</p>
+            <div class="text-button">
+              <a href="#">Толығырақ <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Әр түрлі негізгі платформалар</h4>
+            <p>Егер де жобаларға қолдау көрсеткіңіз келсе <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank"> PayPal арқылы</a> білдіре аласыз.Алдын ала рақмет!</p>
+            <div class="text-button">
+              <a href="#">Толығырақ <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>24/7 Көмек &amp; Қолдау</h4>
+            <p>Оқушылар үшін платформаны ыңғайлы әрі сапалы ету мақсатында сұрақ-жауап қызметі қарқынды жұмыс істейді. Кез келген сұраққа жауап алу мүмкіндігі бар және
+            қызмет көрсету тегін.            </p>
+            <div class="text-button">
+              <a href="#">Толығырақ <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>Жұмыс барысы &amp; Жоспар</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Бұл жұмыста веб-сайттарды құрудың негізі болып табылатын HTML гипермәтінді белгілеу тіліне сипаттама беретін боламыз.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Біліктілік мәселесі</a></h4>
+                <p>Сапалы веб-сайттар</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">24/7 Қызмет &amp; Көмек</a></h4>
+                <p>Сұрақ және жауап</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Тақырыптар жөнінде</a></h4>
+                <p>Мәтіндерді әзірлеу</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Жеке даму</a></h4>
+                <p>Оқушымен жеке шұғылдану</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p>Жұмыстың мақсаты-HTML тілін қолдана отырып, веб-сайт құру принциптерін талдау.</p>
+              <div class="gradient-button">
+                <a href="#">Жұмысты бастау</a>
+              </div>
+              <span>Кредит картасы маңызды емес</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-right-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Тұтынушылардың бағалауы <em>біз үшін </em> өте маңызды</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Пайдаланушыдан тек әзірленген өнімнің тақырыбына қатысты жұмысты орындау қажет: мәтіндерді дайындау, суреттер салу, HTML беттерін құру және олардың арасындағы байланыс туралы ойлау.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Айдос Арманов</h4>
+                            <span class="date">30.04.2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category"> Қаржылық қосымша</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Жандос Сабыров</h4>
+                            <span class="date">29.07.2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Сандық бизнес</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Сара Айбекова</h4>
+                            <span class="date">27.12.2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Бизнес &amp; Экономика</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Бейтаныс тұтынушы</h4>
+                            <span class="date">24.02.2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Жаңа эко-жүйе қосымшасы</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Марат Оразов</h4>
+                            <span class="date">21.03.2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Фрилансер</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Hyper Text Markup Language-бұл гипермәтіндік белгілеу тілі, Ол кескіндермен, дыбыстармен, анимациялармен, бейнеклиптермен және гипермәтіндік сілтемелермен қаныққан, веб-кеңістікте де, сол серверде де шашыраңқы немесе сол Веб-жобаның ажырамас бөлігі болып табылатын басқа құжаттарға арналған. Сіз HTML тілін білмей Web-те жұмыс істей аласыз, өйткені HTML мәтіндерін әртүрлі арнайы редакторлар мен түрлендіргіштер жасай алады. Бірақ HTML-ге тікелей жазу қиын емес. HTML редакторын немесе түрлендіргішті үйренуден гөрі оңай болуы мүмкін, олар көбінесе өз мүмкіндіктерімен шектеледі.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/pngegg.png" alt="">
+                                <div class="right-content">
+                                  <h4>Айдос Арманов</h4>
+                                  <span>Аманат қорының басшысы</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Hyper Text Markup Language-бұл гипермәтіндік белгілеу тілі, Ол кескіндермен, дыбыстармен, анимациялармен, бейнеклиптермен және гипермәтіндік сілтемелермен қаныққан, веб-кеңістікте де, сол серверде де шашыраңқы немесе сол Веб-жобаның ажырамас бөлігі болып табылатын басқа құжаттарға арналған. Сіз HTML тілін білмей Web-те жұмыс істей аласыз, өйткені HTML мәтіндерін әртүрлі арнайы редакторлар мен түрлендіргіштер жасай алады. Бірақ HTML-ге тікелей жазу қиын емес. HTML редакторын немесе түрлендіргішті үйренуден гөрі оңай болуы мүмкін, олар көбінесе өз мүмкіндіктерімен шектеледі.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/pngegg.png" alt="">
+                                <div class="right-content">
+                                  <h4>Жандос Сабыров</h4>
+                                  <span>Сандық компания менеджері</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Hyper Text Markup Language-бұл гипермәтіндік белгілеу тілі, Ол кескіндермен, дыбыстармен, анимациялармен, бейнеклиптермен және гипермәтіндік сілтемелермен қаныққан, веб-кеңістікте де, сол серверде де шашыраңқы немесе сол Веб-жобаның ажырамас бөлігі болып табылатын басқа құжаттарға арналған. Сіз HTML тілін білмей Web-те жұмыс істей аласыз, өйткені HTML мәтіндерін әртүрлі арнайы редакторлар мен түрлендіргіштер жасай алады. Бірақ HTML-ге тікелей жазу қиын емес. HTML редакторын немесе түрлендіргішті үйренуден гөрі оңай болуы мүмкін, олар көбінесе өз мүмкіндіктерімен шектеледі.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/pngegg-2.png" alt="">
+                                <div class="right-content">
+                                  <h4>Сара Айтбекова</h4>
+                                  <span>"WebDev" қосымшасының лидері</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Hyper Text Markup Language-бұл гипермәтіндік белгілеу тілі, Ол кескіндермен, дыбыстармен, анимациялармен, бейнеклиптермен және гипермәтіндік сілтемелермен қаныққан, веб-кеңістікте де, сол серверде де шашыраңқы немесе сол Веб-жобаның ажырамас бөлігі болып табылатын басқа құжаттарға арналған. Сіз HTML тілін білмей Web-те жұмыс істей аласыз, өйткені HTML мәтіндерін әртүрлі арнайы редакторлар мен түрлендіргіштер жасай алады. Бірақ HTML-ге тікелей жазу қиын емес. HTML редакторын немесе түрлендіргішті үйренуден гөрі оңай болуы мүмкін, олар көбінесе өз мүмкіндіктерімен шектеледі.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/pngegg.png" alt="">
+                                <div class="right-content">
+                                  <h4>Бейтаныс тұтынушы</h4>
+                                  <span>Авияция бөлімінің хатшысы</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Hyper Text Markup Language-бұл гипермәтіндік белгілеу тілі, Ол кескіндермен, дыбыстармен, анимациялармен, бейнеклиптермен және гипермәтіндік сілтемелермен қаныққан, веб-кеңістікте де, сол серверде де шашыраңқы немесе сол Веб-жобаның ажырамас бөлігі болып табылатын басқа құжаттарға арналған. Сіз HTML тілін білмей Web-те жұмыс істей аласыз, өйткені HTML мәтіндерін әртүрлі арнайы редакторлар мен түрлендіргіштер жасай алады. Бірақ HTML-ге тікелей жазу қиын емес. HTML редакторын немесе түрлендіргішті үйренуден гөрі оңай болуы мүмкін, олар көбінесе өз мүмкіндіктерімен шектеледі.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/pngegg.png" alt="">
+                                <div class="right-content">
+                                  <h4>Марат Оразов</h4>
+                                  <span>СЕО, DIGIT LAND</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Ең үздік <em>Бағалар</em> Бізбен бірге!</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Қол жетімді қосымшалар легін сізге ұсынамыз</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$10</span>
+            <h4>Стандарттық жоспар қосымшасы</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>HTML қолданым жүйесі</li>
+              <li>20 TB жады</li>
+              <li class="non-function">Өмірлік қолданым</li>
+              <li class="non-function">Премиум қондырмалары</li>
+              <li class="non-function">Жылдам желі</li>
+              <li class="non-function">Басқа функциялар</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Төлем жасау</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-pro">
+            <span class="price">$40</span>
+            <h4>Бизнес жоспар қосымшасы</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>HTML қолданым жүйесі</li>
+              <li>50 TB жады</li>
+              <li>Өмірлік қолданым</li>
+              <li>Премиум қондырмалары</li>
+              <li class="non-function">Жылдам желі</li>
+              <li class="non-function">Басқа функциялар</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Төлем жасау</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$70</span>
+            <h4>Премиум жоспар қосымшасы</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>HTML қолданым жүйесі</li>
+              <li>80 TB жады</li>
+              <li>Өмірлік қолданым</li>
+              <li>Премиум қондырмалары</li>
+              <li>Жылдам желі</li>
+              <li>Басқа функциялар</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Төлем жасау</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Жаңалықтар &amp; соңғы үлгілерден хабардар болу үшін тіркеліңіз</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email адрес..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Қазір тіркелу <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Бізбен хабарласыңыз</h4>
+            <p>Өскемен қаласы, Абай көшесі, 90, 2-қабат</p>
+            <p><a href="#">280-450-899</a></p>
+            <p><a href="#">message@company.com</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Біз туралы</h4>
+            <ul>
+              <li><a href="#">Негізгі бет</a></li>
+              <li><a href="#">Қызметтер</a></li>
+              <li><a href="#">Жоба жайлы</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Бағалау</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Қосымша жайлы</a></li>
+              <li><a href="#">Қызметкерлер</a></li>
+              <li><a href="#">Растау</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Керекті сілтемелер</h4>
+            <ul>
+              <li><a href="#">Тегін қосымшалар</a></li>
+              <li><a href="#">Қосымша негізі</a></li>
+              <li><a href="#">Программа</a></li>
+              <li><a href="#">Дамыту</a></li>
+              <li><a href="#">Жаңалықтар</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Қосымша қызметкерлері</a></li>
+              <li><a href="#">Сандық сайт</a></li>
+              <li><a href="#">Толығырақ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Жоба жайлы</h4>
+            <p>HTML-де жұмыс істеу-бұл қажет болған жағдайда ғана кеңейтімдерді қолдана отырып, стандартталған тілде құжаттарды құру ерекшеліктерін игерудің тәсілі болып табылады.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 Info Company. 
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
